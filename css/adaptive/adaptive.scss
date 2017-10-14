@@ -1,0 +1,506 @@
+@import "../_misc/variables";
+@import "../_misc/normalize";
+@import "../_misc/typography";
+@import "../_misc/fonts";
+@import "../_misc/mixins";
+@import "../_misc/common";
+
+@media screen and (max-width: 1250px) {
+  html {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 980px;
+  }
+
+  .header__logo {
+    float: left;
+    width: 15%;
+    margin-left: 1rem;
+  } 
+
+  .nav__list {
+    text-align: center;
+  }
+
+  .collections__top_men,
+  .collections__top_woman,
+  .collections__top_watches {
+    width: 310px;
+  } 
+
+  .collections__top_men {
+    .collections__top-image { 
+    padding: 188px 105px;
+    }
+  }
+
+  .collections__top_woman {
+    .collections__top-image { 
+    padding: 188px 105px;
+    }
+  }
+
+  .collections__top_watches {
+    .collections__top-image { 
+    padding: 188px 105px;
+    }
+  }
+
+  .collections__bottom-sale_new,
+  .collections__bottom-sale_mega {
+    max-width: 477px;
+    max-height: 415px;
+  }
+
+  .content-sale_new,
+  .content-sale_mega {
+    p {
+      font-size: 35px;
+    }
+  }
+
+  .title {
+    margin-bottom: 1.125rem;
+  }
+
+  .title__text {
+    margin: 0;
+    padding: 1rem 0;
+  }
+
+  .title__top-line {
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+
+  .title__bottom-line {
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+
+  .trending__img {
+    width: 31rem;
+    height: 31rem;
+  }
+
+  .trending__right {
+    width: 25.625rem;
+  }
+
+  .trending__item-name {
+    font-size: 1.5rem;
+    margin-bottom: 0.875rem;
+  }
+
+  .trending__item-description {
+    p {
+      font-size: 1rem;
+      margin-bottom:2.5rem;
+    }
+  }
+
+  .trending__pagination {
+    margin-left: 5rem;
+  }
+
+  .blog__left,
+  .blog__right {
+    width: 28.6rem;
+  }
+
+  .blog__item {
+    width: 31.625rem;
+    height: 22rem;
+  }
+
+  .blog__item-name {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .subscribe__form-label {
+    font-size: 1rem;
+  }
+
+  .subscribe__form-input {
+    padding: 0.9375rem 20.375rem 0.9375rem 5.3125rem;
+  }
+
+  //fix for firefox
+  @-moz-document url-prefix() { 
+    .subscribe__form-input {
+      padding: 0.9375rem 19.375rem 0.9375rem 5.3125rem;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 750px;
+  }
+
+  .nav__list {
+    text-align: left;
+  }
+
+  .nav__item {
+    margin-left: 3.375rem;
+  }
+  
+  .collections__bottom-sale_new,
+  .collections__bottom-sale_mega {
+    max-width: 360px;
+    max-height: 415px;
+  }
+
+  .collections__bottom-image_new {
+    background: url(../../images/content/new_sale_img.jpg) top center no-repeat;
+  }
+
+  .collections__bottom-image_mega {
+    background: url(../../images/content/mega_sale_img.jpg) top center no-repeat;
+  }
+
+  .content-sale_new {
+    padding: 8.5rem 7.3125rem;
+  }
+
+  .content-sale_mega {
+    padding: 6.5rem 5rem;
+  }
+
+  //fix for firefox
+  @-moz-document url-prefix() { 
+    .content-sale_mega {
+      padding: 8.5rem 5rem;
+    }
+  }
+
+  .trending__img {
+    width: 28rem;
+    height: 28rem;
+  }
+
+  .trending__right,
+  .trending__left {
+    width: 23.625rem;
+  }
+
+  .size__item {
+    width: 4rem;
+    height: 3rem;
+    margin-right: 1rem;
+  }
+  
+  .trending__button-link {
+    padding: 1rem 1.8rem;
+    font-size: 1rem;
+  }
+
+  .trending__item-description {
+    p {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      &:nth-child(2) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .blog {
+    text-align: center;
+  }
+
+  .blog__left, 
+  .blog__right {
+    width: 26.6rem;
+  }
+
+  .blog__item {
+    width: 26rem;
+    height: 20rem;
+  }
+  
+  .blog__item-img
+    &:first-child {
+      display: inline-block;
+  }
+
+
+  .blog__item-content {
+    p {
+    font-size: 1.12rem;
+      &:before {
+        left: 0;
+      }
+    }
+  }  
+
+  .subscribe {
+    background-size: inherit;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .subscribe__form-input {
+    padding: 0.8rem 19rem 0.8rem 5rem;
+    background: url(../../images/icon/envelope.png) 4% no-repeat;
+  }
+
+  .subscribe__form-button {
+    padding: 0.9375rem 4rem;
+    margin-left: 1rem;
+  }
+
+  //fix for firefox
+  @-moz-document url-prefix() { 
+    .subscribe__form-input {
+      padding: 0.8rem 19rem 0.8rem 5rem;
+    }
+  }
+
+}
+
+
+
+@media screen and (max-width: 768px) { 
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 580px;
+  }
+
+  .toggle-menu {
+    display: block;
+    height: 50px;
+    width: 50px;
+    float: right;
+    position: relative;
+    right: 0%;
+    top: -5%;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  
+  .toggle-bar {
+    display: block;
+    position: absolute;
+    height: 3px;
+    background: $white;
+    left: 23%;
+    top: 48%;
+    right: 20%;
+  }
+  
+  .toggle-bar:first-child {
+    display: block;
+    position: absolute;
+    height: 3px;
+    background: $white;
+    left: 23%;
+    top: 30%;
+    right: 20%;
+  }
+
+  .toggle-bar:last-child {
+    display: block;
+    position: absolute;
+    height: 3px;
+    background: $white;
+    left: 23%;
+    top: 66%;
+    right: 20%;
+  } 
+
+  .toggle-bar_active {
+    .toggle-bar:nth-child(2) {
+      width: 0;
+    }
+    .toggle-bar:first-child {
+      transform: rotate(45deg) translate(7.4px, 4.4px);
+    }
+    .toggle-bar:last-child {
+      transform: rotate(-45deg) translate(7.4px, -4.4px);
+    }
+  }  
+    
+  .nav__list {
+    display: none;
+  }
+
+  .nav__list_active {
+    display: block;
+    background-color: rgba($dark-grey, 0.9);
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 11%;
+    margin: 0; 
+    text-align: center;
+    z-index: 999;   
+  }  
+
+  .nav__item {
+    display: block;
+    padding: 3%;
+  }
+
+  .nav__link {
+    display: block;
+    font-size: 2rem;
+    font-weight: $bold;
+  }
+
+
+  .collections__top_men,
+  .collections__top_woman,
+  .collections__top_watches {
+    width: 310px;
+    margin-bottom: 1rem;
+  } 
+
+  .collections__bottom-sale_new {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+
+  .collections__bottom-sale_mega {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .trending__item {
+    text-align: center;
+    &:after, &:before {
+      content: "";
+      display: none;
+    }
+    &:after {
+      clear: none;
+    }
+  }
+
+  .trending__right,
+  .trending__left {
+    float: none;
+    margin: auto;
+  }
+
+  .trending__img {
+    width: 26rem;
+    height: 26rem;
+    margin-bottom: 1rem;
+  }
+
+  .trending__item-description {
+      p:first-child {
+        &:before {
+          height: 0;
+        }
+      }
+  }
+  
+  .trending__pagination {
+    margin-left: 0;
+  }
+  
+  .blog {
+    &:after, &:before {
+      content: "";
+      display: none;
+    }
+    &:after {
+      clear: none;
+    }
+  }  
+
+  .blog__left,
+  .blog__right {
+    float: none;
+    margin: auto;
+    margin-bottom: 4rem;
+    width: 35rem;
+  }  
+
+  .blog__item-content {
+      p {
+
+        &:before {
+          top: 210%;
+          left: 0;
+          width: 100%;
+        }
+      }    
+  }
+
+  .subscribe__form-input {
+    margin-bottom: 1rem;
+  }
+
+  .subscribe__form-button {
+    margin-left: 0;
+  }
+
+  .footer {
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
+  }
+
+}
+
+
+
+@media screen and (max-width: 480px) { 
+  html {
+    font-size: 12px;
+  }
+
+  .container {
+    width: auto;
+  }
+
+  .subscribe {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .subscribe__form-label,
+  .subscribe__form-input,
+  .subscribe__form-button {
+    margin-left: 1rem;
+  }
+
+  .subscribe__form-input {
+    padding: 0.8rem 14rem 0.8rem 5rem;
+  }
+
+  //fix for firefox
+  @-moz-document url-prefix() { 
+    .subscribe__form-input {
+      padding: 0.8rem 11rem 0.8rem 5rem;
+    }
+  }
+
+  .footer {
+    padding-top: 1.125rem;
+    padding-bottom: 0.125rem;
+  }
+
+}

@@ -1,0 +1,81 @@
+%clearfix {
+	&:after, &:before {
+		content: "";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+%pagination {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 7px;
+}
+
+//clothes  top categories
+%collections__top {
+  display: inline-block;
+  width: 370px;
+  height:420px;
+  overflow: hidden;
+}
+
+//coolection top image 
+%top__image {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    padding: 195px 150px;
+    color:$white;
+    font-size: 32px;
+    font-family: 'open_sanslight_italic';
+    position: relative;
+     //white border inside image
+      &:before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      bottom: 20px;
+      left: 20px;
+      border: 1px solid $white;
+    }
+}  
+
+//clothes bottom categories
+%bottom__sale {
+  display: inline-block;
+  max-width: 570px;
+  max-height: 420px;
+  overflow: hidden;
+}
+
+//coolection bottom image
+%bottom__image {
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+}
+
+//coolection bottom text
+%content {
+  p {
+    color:$white;
+    font-size: 40px;
+    font-family: 'latoblack';
+    text-align: center; 
+    margin-bottom: 0;
+  }
+}
+
+
+//convert PX to REM
+@function rem($px) {
+	@return $px/16px + 0rem;
+}
+
